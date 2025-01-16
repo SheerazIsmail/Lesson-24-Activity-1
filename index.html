@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Intro to HTML Dom </title>
+        <style>
+            body {
+                background-color: beige;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+            }
+            h1 {
+                background-color: rgb(161, 110, 43);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: 10px ridge coral;
+                box-shadow: 10px 10px 10px chocolate;
+            }
+            button {
+                background-color: rgb(230, 159, 53);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 2px;
+                border: ridge chocolate;
+                box-sizing: border-box;
+                box-shadow: 10px 10px 10px chocolate;
+            }
+        </style>
+        <body>
+            <center>
+                <h1 id="heading">HY</h1>
+                <button onclick="changeText()"> Click Here</button>
+
+                <script>
+                    function changeText() {
+                        var heading = document.getElementById("heading");
+                        heading.innerHTML = "Hello";
+                        heading.style.colour ="purple";
+                        heading.style.fontSize = "70px";
+                        heading.style.textShadow = "2px 3px 5px silver";
+                        document.body.style.backgroundColor = "blue";
+
+                    }   
+                    
+                    
+                    </script>
+            </center>
+        </body>
+    </head>
+</html>
